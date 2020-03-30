@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Email Check -->
+    <section class="email">
+        <div class="email-input">
+            <div class="row">
+                <div class="col">
+                    <label for="email">Nome e Cognome</label>
+                    <input id="email" type="email" 
+                           name="email"
+                           placeholder="Inserisci la tua Email: example@mymail.com"
+                    >
+                </div>
+            </div>
+        </div>    
+    
+        <div id="button_section" class="row">
+            <div class="col">
+                <button class="btn" id="buttonCheck">Check</button>
+            </div>
+            <div class="col">
+                <button class="btn" id="buttonCanc">Canc</button>
+            </div>             
+        </div>
+    
+        <div id="email-check">
+            <h1 id="email-response"></h1>
+        </div>
+    </section>
+    
+
+    <!-- Dadi -->
+    <section class="dadi">
+
+        <div id="button_roll" class="row">
+            <div class="col">
+                <button class="btn" id="buttonRoll">Roll</button>
+            </div>
+            <div class="col">
+                <button class="btn" id="buttonRetry">Replay</button>
+            </div>             
+        </div>
+
+        <div id="user-num">
+            <h1>Your Number</h1>
+            <h2 id="userNum"></h2>
+        </div>
+    
+        <div id="pc-num">
+            <h1>PC Number</h1>
+            <h2 id="pcNum"></h2>
+        </div>
+        
+        <div id="result">
+            <h1>Result</h1>
+            <h2 id="resultPlay"></h2>
+        </div>
+    </section>
+    
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+
