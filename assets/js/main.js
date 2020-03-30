@@ -10,7 +10,7 @@
 var emailList = ['michele@boolean.careers', 'fabio@boolean.careers', 'roberto@boolean.careers'];
 console.table(emailList);
 
-
+var emailCheck = document.getElementById('email-check');
 var buttonCheck = document.getElementById('buttonCheck');
 var buttonCanc = document.getElementById('buttonCanc');
 var userFound = false;
@@ -36,8 +36,10 @@ buttonCheck.addEventListener('click',
 
         if (userFound == true) {             
             document.getElementById('email-response').innerHTML = 'Email presente nel sistema';
+            emailCheck.className = 'show';
         } else {
             document.getElementById('email-response').innerHTML = 'Email non presente nel sistema';
+            emailCheck.className = 'show';
         }
     }    
 );
@@ -46,6 +48,8 @@ buttonCanc.addEventListener('click',
     function() {
         var userEmail = document.getElementById('email').value = '';
         document.getElementById('email-response').innerHTML = '';
+        document.getElementById('email-response').innerHTML = 'null';
+        emailCheck.className = 'hidden'
     }
 );
 
@@ -58,7 +62,7 @@ buttonCanc.addEventListener('click',
 
 */
 
-
+var dadiResults = document.getElementById('dadi__results');
 var buttonRoll = document.getElementById('buttonRoll');
 var buttonRetry = document.getElementById('buttonRetry');
 var resultPlay
@@ -77,6 +81,9 @@ buttonRoll.addEventListener('click',
          } else {
             var resultPlay = document.getElementById('resultPlay').innerHTML = 'DRAW - Retry!'; 
          }
+
+        dadiResults.classList.remove('hidden');
+        dadiResults.classList.add('show');
     }
 );    
 
@@ -85,6 +92,8 @@ buttonRetry.addEventListener('click',
         document.getElementById('userNum').innerHTML = '';
         document.getElementById('pcNum').innerHTML = '';
         var resultPlay = document.getElementById('resultPlay').innerHTML = '';
+        dadiResults.classList.remove('show');
+        dadiResults.classList.add('hidden');
     }
 );
 

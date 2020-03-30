@@ -7,9 +7,119 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    color: #fff;
 }
+
+/* utility */
+
+.u-flex {
+    display: flex;
+}
+
+.u-flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+.justify-column {
+    justify-content: center;
+    align-items: center;
+}
+
+.title-h1 {
+    margin-bottom: 20px;
+    font-size: 430%;
+    font-weight: 100;
+}
+/* Email */
+
+.email {
+    height: 100vh;
+    background: #3f51b5;
+}
+
+label {
+    display: none;
+}
+
+.email input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    text-indent: 10px;
+    border: 1px solid transparent;
+}
+
+.email input:focus,
+.email input:active {
+    outline: transparent;
+}
+
+.btn {
+    padding: 5px 82px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    background-color: #ffffff;
+    color: #424242;
+    font-size: 70%;
+    font-weight: 400;
+}
+
+#button_section .col:first-child .btn {
+    margin-right: 10px;
+}
+
+#email-check {
+    margin-top: 20px;
+}
+
+#email-response {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/* Dadi */
 
 .dadi {
-    margin-top: 100px;
+    height: 100vh;
+    background: #4caf50;
 }
 
+#button_roll .btn__replay {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.dadi__buttons {
+
+}
+
+#dadi__results {
+    margin-top: 15px;
+}
+
+#user-num,
+#pc-num,
+#result {
+    padding: 35px;
+    background: #fff;
+    color: #4caf50;
+    text-align: center;
+}
+
+.dadi__results h1 {
+
+}
+
+.dadi__results h2 {
+
+}

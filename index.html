@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS | Email & Dice</title>
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Google Font -->
@@ -12,20 +12,20 @@
 <body>
     
     <!-- Email Check -->
-    <section class="email">
+    <section class="email u-flexColumn justify-column">
+        <div class="email-title">
+            <h1 class="title-h1">CheckYourEmail</h1>
+        </div>
+
         <div class="email-input">
-            <div class="row">
-                <div class="col">
                     <label for="email">Nome e Cognome</label>
                     <input id="email" type="email" 
                            name="email"
                            placeholder="Inserisci la tua Email: example@mymail.com"
                     >
-                </div>
-            </div>
         </div>    
     
-        <div id="button_section" class="row">
+        <div id="button_section" class="row u-flex">
             <div class="col">
                 <button class="btn" id="buttonCheck">Check</button>
             </div>
@@ -34,38 +34,43 @@
             </div>             
         </div>
     
-        <div id="email-check">
-            <h1 id="email-response"></h1>
+        <div id="email-check" class="hidden">
+            <h1 id="email-response">null</h1>
         </div>
     </section>
     
 
     <!-- Dadi -->
-    <section class="dadi">
-
-        <div id="button_roll" class="row">
-            <div class="col">
-                <button class="btn" id="buttonRoll">Roll</button>
+    <section class="dadi u-flexColumn justify-column">
+        <div class="dadi__title">
+            <h1 class="title-h1">RollTheDice</h1>
+        </div>
+        <div class="dadi__buttons">
+            <div id="button_roll" class="row u-flex">
+                <div class="col">
+                    <button class="btn" id="buttonRoll">Roll</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn__replay" id="buttonRetry">Replay</button>
+                </div>             
             </div>
-            <div class="col">
-                <button class="btn" id="buttonRetry">Replay</button>
-            </div>             
         </div>
-
-        <div id="user-num">
-            <h1>Your Number</h1>
-            <h2 id="userNum"></h2>
-        </div>
-    
-        <div id="pc-num">
-            <h1>PC Number</h1>
-            <h2 id="pcNum"></h2>
-        </div>
+        <div id="dadi__results" class="u-flex hidden">
+            <div id="user-num">
+                <h1>Your Number</h1>
+                <h2 id="userNum">1</h2>
+            </div>
         
-        <div id="result">
-            <h1>Result</h1>
-            <h2 id="resultPlay"></h2>
-        </div>
+            <div id="pc-num">
+                <h1>PC Number</h1>
+                <h2 id="pcNum">1</h2>
+            </div>
+            
+            <div id="result">
+                <h1>Result</h1>
+                <h2 id="resultPlay">WIN</h2>
+            </div>
+        </div>    
     </section>
     
     <!-- JS -->
